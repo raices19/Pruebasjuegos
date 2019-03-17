@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bttnregreso;
+    Button bttnjuego;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        bttnregreso=(Button) findViewById(R.id.btnjuego);
+        bttnjuego=(Button) findViewById(R.id.btnjugar);
 
-        bttnregreso.setOnClickListener(new View.OnClickListener() {
+        bttnjuego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pagina2 = new Intent(MainActivity.this,MenuJuego.class);
-                startActivity(pagina2);
+                Intent pagina2 = new Intent(MainActivity.this, MenuJuego.class);
+                        startActivity(pagina2);
             }
         });
     }
