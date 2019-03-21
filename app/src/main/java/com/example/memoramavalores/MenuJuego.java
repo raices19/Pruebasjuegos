@@ -11,7 +11,6 @@ public class MenuJuego extends AppCompatActivity {
 
     Button bttnregreso;
     TextView puntos, falla, tiempo;
-    ImageButton
 
     int intpunto=0;
 
